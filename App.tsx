@@ -13,6 +13,7 @@ export default function App() {
         <View style={styles.container}>
           <Stack.Navigator>
             <Stack.Screen name='Main' component={Main} />
+            {"Para agregar rutas se crea un Stack.Screen con nombre de la screen y el component para renderizar"}
           </Stack.Navigator>
         </View>
     </NavigationContainer>
