@@ -1,10 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import Main from './src/screens/Main';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>GoParty!</Text>
+      <Main />
       <StatusBar style="auto" />
     </View>
   );
