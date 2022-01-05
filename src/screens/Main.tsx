@@ -5,6 +5,7 @@ import MapView from "react-native-maps";
 import CurrentLocation from "../components/CurrentLocation";
 import { useCurrentLocation } from "../hooks/useCurrentLocation";
 import PartyMarker from "../components/PartyMarker";
+import SearchPlaces from "../components/SearchPlaces";
 
 const Main = () => {
 
@@ -17,8 +18,9 @@ const Main = () => {
           <MapView style={styles.map} initialRegion={initialRegion}>
             <CurrentLocation location={location}/>
             <PartyMarker />
-          </MapView>    
+          </MapView>
         }
+        <SearchPlaces />
       </>
     )
 }
